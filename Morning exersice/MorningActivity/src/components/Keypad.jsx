@@ -12,7 +12,7 @@ export default function Keypad ({onButtonClick, onCalculate, onClear}){
                 {button}
                 </button> ))}
             <button onClick = {onCalculate} className="button">=</button>
-            <button onClick = {onClear} className="button">Clear</button>
+            <button onClick = {onClear} className="button">AC</button>
         </div>
     )
 }
