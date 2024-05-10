@@ -6,7 +6,7 @@ export default function Keypad ({onButtonClick, onCalculate, onClear}){
     ]
 
     return (
-        <div>
+        <div className='keypad'>
             {buttons.map(button => (
                 <button key={button} onClick = {() => onButtonClick(button)} className="button">
                 {button}

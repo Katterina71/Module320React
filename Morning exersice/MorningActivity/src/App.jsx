@@ -5,12 +5,12 @@ import Calculator from './components/Calculator'
 function App() {
  
   return (
-    <>
       <div className='App'>
-      <h1>Simple Calculator</h1>
-      <Calculator />
+        <h1>Simple Calculator</h1>
+       <div className = 'calculator'>
+           <Calculator />
       </div>
-    </>
+      </div>
   )
 }
 
