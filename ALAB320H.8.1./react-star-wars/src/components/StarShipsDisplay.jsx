@@ -14,6 +14,8 @@ const StarShipsDisplay = ({starShips}) => {
             <div key={index} className="starship-card">
                 <h3 className="text">{ship.name}</h3>
                 <p className="text">Model: {ship.model}</p>
+                <p className="text">Crew: {ship.crew}</p>
+           
             </div>
               ))}
          </div>
