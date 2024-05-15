@@ -1,0 +1,31 @@
+/* StarShips.css */
+.starship-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns of equal width */
+    grid-gap: 20px; /* Sets the gap between the grid items */
+    padding: 20px;
+  }
+  
+  .starship-card {
+    background: #080236; /* Light grey background for each card */
+    border: 1px solid #0d0165; /* Light grey border */
+    padding: 15px;
+    box-shadow: 0 4px 8px #1d0f84; /* Adds a subtle shadow to each card */
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .starship-grid {
+      grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on smaller screens */
+    }
+  }
+
+  .header {
+    color: yellow;
+    font-size: 50px;
+  }
+
+  .text {
+    color: white;
+  }
+  
