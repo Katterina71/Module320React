@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-import StarShips from './components/StarShips';
+import StarShipsDisplay from './components/StarShipsDisplay';
 
 function App() {
   const [starShips, setStarShips] = useState(null);
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <StarShips starShips={starShips} />
+      <StarShipsDisplay starShips={starShips} />
     </div>
   );
 }

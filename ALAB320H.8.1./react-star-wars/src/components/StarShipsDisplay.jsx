@@ -1,7 +1,7 @@
 // import React from "react";
 import '../StarShips.css'; 
 
-const StarShips = ({starShips}) => {
+const StarShipsDisplay = ({starShips}) => {
 
     if (!starShips) return <div>Loading starships...</div>;  // Handling the loading state
     console.log(starShips[1])
@@ -22,7 +22,7 @@ const StarShips = ({starShips}) => {
      );
 }
  
-export default StarShips;
+export default StarShipsDisplay;
 
 
 
