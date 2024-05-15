@@ -7,7 +7,7 @@ const StarShipsDisplay = ({starShips}) => {
     console.log(starShips[1])
     return ( 
         <div>
-        <h2 className = "header"> Star Ships </h2>
+        <h2 className = "header"> Star Wars Ships </h2>
             
       <div className="starship-grid">
              {starShips.map((ship, index) => (
