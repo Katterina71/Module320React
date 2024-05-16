@@ -1,5 +1,6 @@
 // import React from "react";
 import '../StarShips.css'; 
+import {Link} from 'react-router-dom'
 
 const StarShipsDisplay = ({starShips}) => {
 
@@ -11,12 +12,13 @@ const StarShipsDisplay = ({starShips}) => {
             
       <div className="starship-grid">
              {starShips.map((ship, index) => (
-            <div key={index} className="starship-card">
-                <h3 className="text">{ship.name}</h3>
-                <p className="text">Model: {ship.model}</p>
-                <p className="text">Crew: {ship.crew}</p>
-           
-            </div>
+              <Link key={index} to={`/star-ship/${index}`} >
+                <div key={index} className="starship-card">
+                    <h3 className="text">{ship.name}</h3>
+                    <p className="text">Model: {ship.model}</p>
+                    <p className="text">Crew: {ship.crew}</p>
+                </div>
+            </Link>
               ))}
          </div>
 

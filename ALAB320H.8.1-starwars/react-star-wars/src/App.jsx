@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 import StarShipsDisplay from './components/StarShipsDisplay';
+import StarShip from './pages/StarShip'
 
 function App() {
   const [starShips, setStarShips] = useState(null);
@@ -22,9 +24,14 @@ function App() {
     };
 
   return (
+    <BrowserRouter>
     <div>
-      <StarShipsDisplay starShips={starShips} />
+      <Routes>
+           <Route path="/" element={<StarShipsDisplay starShips={starShips} />} />
+            <Route path="/star-ship/:id" element={<StarShip />} />
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
